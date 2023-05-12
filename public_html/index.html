@@ -15,7 +15,31 @@ and open the template in the editor.
         
     </body>
     <script src ="js/functions.js">
-        var egyik = document.createElement("table");
-        mifele(egyik);
+       
         </script>
+        <script>
+             var egyik = document.createElement("table");
+        mifele(egyik);
+        mifele(document);
+        mifele(window);
+        var masik = document.createElement("tr");
+        var harmadik = document.createElement("td");
+        mifele(masik);
+        mifele(harmadik);
+        var t = document.createElement("table");
+        for(let sor =1; sor <=8; sor++){
+            var s = document.createElement("tr");
+            for(let cella =1; cella <=8; cella++){
+                var c = document.createElement("td");
+                if(sor%2==0 && cella%2 ==0 || sor%2 !=0 && cella !=0){
+                   // c.style = "background-color: black";
+                   c.className = "sotet";
+                }
+                // c.style+= "width:10px;height:10px";
+                s.appendChild(c);
+            }
+            t.appendChild(s);
+        }
+        document.body.appendChild(t);
+            </script>
     </html>
