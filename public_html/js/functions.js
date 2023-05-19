@@ -7,3 +7,7 @@
 function mifele(objektum){
     window.alert(objektum);
 }
+
+window.customElements.define("taj-szam",TAJSzam);
+
+
