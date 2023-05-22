@@ -8,6 +8,6 @@ function mifele(objektum){
     window.alert(objektum);
 }
 
-window.customElements.define("taj-szam",TAJSzam);
-
+//window.customElements.define("taj-szam",TAJSzam);
+window.customElements.define("azonosito-szam",Azonosito);
 

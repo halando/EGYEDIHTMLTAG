@@ -9,12 +9,18 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href ="styles.css">
+        <link rel="stylesheet" href ="css/styles.css">
         <script src ="js/TAJSzam.js"></script>
+         <script src ="js/Azonosito.js"></script>
     </head>
     <body>
-        <div>Egyedi HMTL Tag  </div>
-    <taj-szam megnevezes="taj" hossz="9" elso=""></taj-szam>
+      <div> <!--Egyedi HMTL Tag
+      <taj-szam megnevezes="taj" hossz="9" elso=""></taj-szam>-->
+    <label for ="taj">TAJ szám:</label>
+    <azonosito-szam id ="taj" megnevzes ="taj" hossz ="9" elso =""></azonosito-szam>
+      <label for ="taj">Adószám:</label>
+    <azonosito-szam id ="ado" megnevzes ="ado" hossz ="10" elso ="8"></azonosito-szam>
+    </div>
     </body>
     <script src ="js/functions.js">
        

@@ -93,7 +93,7 @@ class TAJSzam extends HTMLElement{
              var rk2= new RegExp("\\D+"); // bármi, ami nem számjegy
              var szoveg = objektum.target.id.replace(rk1,"");
               var szam = objektum.target.id.replace(rk2,"");
-              szam++;
+              szam++;     
               if(szam ==this.getAttribute("hossz"+1)){
                   this.shadowDOM.getElementById(szoveg+szam).blur();
               }else{
